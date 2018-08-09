@@ -8,18 +8,21 @@
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4"
   },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.3"
+  },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "NODE_ENV=production node build/index.js",
     "start:dev": "concurrently \"yarn server\" \"yarn client\"",
-    "server": "nodemon server/index.js",
+    "server": "NODE_ENV=development nodemon --inspect server/index.js --exec babel-node --presets env",
     "client": "react-scripts start",
-    "build": "react-scripts build",
+    "build:server": "babel -d ./build ./server -s --presets env",
+    "build": "react-scripts build && yarn build:server",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080",
-  "devDependencies": {
-    "concurrently": "^3.6.1",
-    "nodemon": "^1.18.3"
-  }
+  "proxy": "http://localhost:8080"
 }
