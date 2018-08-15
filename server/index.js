@@ -1,3 +1,4 @@
+import compression from 'compression';
 import express from 'express';
 import http from 'http';
 import path from 'path';
@@ -5,6 +6,8 @@ import path from 'path';
 const app = express();
 const server = http.Server(app);
 const PORT = process.env.PORT || 8080;
+
+app.use(compression());
 
 app.use(express.static(path.join(__dirname, '..', 'build/')));
 
