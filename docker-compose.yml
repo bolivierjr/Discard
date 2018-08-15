@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  redis:
+    image: redis
+    expose:
+      - 6739
+  web:
+    environment:
+      - NODE_ENV=development
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/code
+      - /code/node_modules
+    ports:
+      - 8080:8080
+      - 3000:3000

@@ -1,0 +1,23 @@
+# git files
+**/.git
+**/.gitignore
+README.md
+
+# dependicies
+**/node_modules/
+
+# build files
+**/build/
+**/Dockerfile.*
+**/Dockerfile
+**/docker-compose.yml
+**/.dockerignore
+
+# tests
+**/coverage/
+
+# logs
+**/*.log
+
+# environment files
+**/.env
