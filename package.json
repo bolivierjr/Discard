@@ -1,6 +1,9 @@
 {
   "name": "discard",
   "version": "0.1.0",
+  "engines": {
+    "node": ">=10.8.0"
+  },
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -9,7 +12,8 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4",
-    "redis": "^2.8.0"
+    "redis": "^2.8.0",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
