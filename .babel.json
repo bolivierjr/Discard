@@ -1,0 +1,594 @@
+{
+  "{\"filename\":\"/home/vagrant/server/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/home/vagrant/server\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:development": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "dotenv/config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "dotenv"
+              }
+            ]
+          },
+          {
+            "source": "./sockets",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "sockets"
+              }
+            ]
+          },
+          {
+            "source": "compression",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "compression"
+              }
+            ]
+          },
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "http",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "http"
+              }
+            ]
+          },
+          {
+            "source": "socket.io",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "SocketIO"
+              }
+            ]
+          },
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/vagrant/server/index.js",
+      "filenameRelative": "/home/vagrant/server/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/home/vagrant/server",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/home/vagrant/server",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _config = require('dotenv/config');\n\nvar _config2 = _interopRequireDefault(_config);\n\nvar _sockets = require('./sockets');\n\nvar _sockets2 = _interopRequireDefault(_sockets);\n\nvar _compression = require('compression');\n\nvar _compression2 = _interopRequireDefault(_compression);\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _http = require('http');\n\nvar _http2 = _interopRequireDefault(_http);\n\nvar _socket = require('socket.io');\n\nvar _socket2 = _interopRequireDefault(_socket);\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\nvar server = _http2.default.Server(app);\nvar io = new _socket2.default(server);\nvar PORT = process.env.PORT || 8080;\n\n/**\r\n * Compress response bodies for all requests.\r\n */\napp.use((0, _compression2.default)());\n\n/**\r\n * Serve this build directory for prod.\r\n */\napp.use(_express2.default.static(_path2.default.join(__dirname, '..', 'build/')));\n\n/**\r\n * Catch-all route handler.\r\n */\napp.get('/*', function (req, res, next) {\n  res.sendFile(_path2.default.resolve(__dirname, '..', 'build', 'index.html'));\n});\n\n/**\r\n * Error handler middleware.\r\n */\napp.use(function (err, req, res, next) {\n  switch (err.name) {\n    case 'redis.RedisError':\n      console.log(err.stack);\n      return res.status(500).json({ message: \"it's really broked\" });\n\n    case 'Error':\n      console.log(err.stack);\n      return res.status(404).json({ message: 'It is broked' });\n  }\n});\n\n/**\r\n * Socket listeners.\r\n */\n(0, _sockets2.default)(io);\n\n/**\r\n * Default server port is 8080.\r\n */\nserver.listen(PORT, function () {\n  console.log('Listening on http://' + process.env.REACT_APP_DOMAIN + ':' + PORT + '...');\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbImFwcCIsInNlcnZlciIsImh0dHAiLCJTZXJ2ZXIiLCJpbyIsIlNvY2tldElPIiwiUE9SVCIsInByb2Nlc3MiLCJlbnYiLCJ1c2UiLCJleHByZXNzIiwic3RhdGljIiwicGF0aCIsImpvaW4iLCJfX2Rpcm5hbWUiLCJnZXQiLCJyZXEiLCJyZXMiLCJuZXh0Iiwic2VuZEZpbGUiLCJyZXNvbHZlIiwiZXJyIiwibmFtZSIsImNvbnNvbGUiLCJsb2ciLCJzdGFjayIsInN0YXR1cyIsImpzb24iLCJtZXNzYWdlIiwibGlzdGVuIiwiUkVBQ1RfQVBQX0RPTUFJTiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBTUEsTUFBTSx3QkFBWjtBQUNBLElBQU1DLFNBQVNDLGVBQUtDLE1BQUwsQ0FBWUgsR0FBWixDQUFmO0FBQ0EsSUFBTUksS0FBSyxJQUFJQyxnQkFBSixDQUFhSixNQUFiLENBQVg7QUFDQSxJQUFNSyxPQUFPQyxRQUFRQyxHQUFSLENBQVlGLElBQVosSUFBb0IsSUFBakM7O0FBRUE7OztBQUdBTixJQUFJUyxHQUFKLENBQVEsNEJBQVI7O0FBRUE7OztBQUdBVCxJQUFJUyxHQUFKLENBQVFDLGtCQUFRQyxNQUFSLENBQWVDLGVBQUtDLElBQUwsQ0FBVUMsU0FBVixFQUFxQixJQUFyQixFQUEyQixRQUEzQixDQUFmLENBQVI7O0FBRUE7OztBQUdBZCxJQUFJZSxHQUFKLENBQVEsSUFBUixFQUFjLFVBQUNDLEdBQUQsRUFBTUMsR0FBTixFQUFXQyxJQUFYLEVBQW9CO0FBQ2hDRCxNQUFJRSxRQUFKLENBQWFQLGVBQUtRLE9BQUwsQ0FBYU4sU0FBYixFQUF3QixJQUF4QixFQUE4QixPQUE5QixFQUF1QyxZQUF2QyxDQUFiO0FBQ0QsQ0FGRDs7QUFJQTs7O0FBR0FkLElBQUlTLEdBQUosQ0FBUSxVQUFDWSxHQUFELEVBQU1MLEdBQU4sRUFBV0MsR0FBWCxFQUFnQkMsSUFBaEIsRUFBeUI7QUFDL0IsVUFBUUcsSUFBSUMsSUFBWjtBQUNFLFNBQUssa0JBQUw7QUFDRUMsY0FBUUMsR0FBUixDQUFZSCxJQUFJSSxLQUFoQjtBQUNBLGFBQU9SLElBQUlTLE1BQUosQ0FBVyxHQUFYLEVBQWdCQyxJQUFoQixDQUFxQixFQUFFQyxTQUFTLG9CQUFYLEVBQXJCLENBQVA7O0FBRUYsU0FBSyxPQUFMO0FBQ0VMLGNBQVFDLEdBQVIsQ0FBWUgsSUFBSUksS0FBaEI7QUFDQSxhQUFPUixJQUFJUyxNQUFKLENBQVcsR0FBWCxFQUFnQkMsSUFBaEIsQ0FBcUIsRUFBRUMsU0FBUyxjQUFYLEVBQXJCLENBQVA7QUFQSjtBQVNELENBVkQ7O0FBWUE7OztBQUdBLHVCQUFReEIsRUFBUjs7QUFFQTs7O0FBR0FILE9BQU80QixNQUFQLENBQWN2QixJQUFkLEVBQW9CLFlBQU07QUFDeEJpQixVQUFRQyxHQUFSLDBCQUFtQ2pCLFFBQVFDLEdBQVIsQ0FBWXNCLGdCQUEvQyxTQUFtRXhCLElBQW5FO0FBQ0QsQ0FGRCIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvaG9tZS92YWdyYW50L3NlcnZlciIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBkb3RlbnYgZnJvbSAnZG90ZW52L2NvbmZpZyc7XHJcbmltcG9ydCBzb2NrZXRzIGZyb20gJy4vc29ja2V0cyc7XHJcbmltcG9ydCBjb21wcmVzc2lvbiBmcm9tICdjb21wcmVzc2lvbic7XHJcbmltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnO1xyXG5pbXBvcnQgaHR0cCBmcm9tICdodHRwJztcclxuaW1wb3J0IFNvY2tldElPIGZyb20gJ3NvY2tldC5pbyc7XHJcbmltcG9ydCBwYXRoIGZyb20gJ3BhdGgnO1xyXG5cclxuY29uc3QgYXBwID0gZXhwcmVzcygpO1xyXG5jb25zdCBzZXJ2ZXIgPSBodHRwLlNlcnZlcihhcHApO1xyXG5jb25zdCBpbyA9IG5ldyBTb2NrZXRJTyhzZXJ2ZXIpO1xyXG5jb25zdCBQT1JUID0gcHJvY2Vzcy5lbnYuUE9SVCB8fCA4MDgwO1xyXG5cclxuLyoqXHJcbiAqIENvbXByZXNzIHJlc3BvbnNlIGJvZGllcyBmb3IgYWxsIHJlcXVlc3RzLlxyXG4gKi9cclxuYXBwLnVzZShjb21wcmVzc2lvbigpKTtcclxuXHJcbi8qKlxyXG4gKiBTZXJ2ZSB0aGlzIGJ1aWxkIGRpcmVjdG9yeSBmb3IgcHJvZC5cclxuICovXHJcbmFwcC51c2UoZXhwcmVzcy5zdGF0aWMocGF0aC5qb2luKF9fZGlybmFtZSwgJy4uJywgJ2J1aWxkLycpKSk7XHJcblxyXG4vKipcclxuICogQ2F0Y2gtYWxsIHJvdXRlIGhhbmRsZXIuXHJcbiAqL1xyXG5hcHAuZ2V0KCcvKicsIChyZXEsIHJlcywgbmV4dCkgPT4ge1xyXG4gIHJlcy5zZW5kRmlsZShwYXRoLnJlc29sdmUoX19kaXJuYW1lLCAnLi4nLCAnYnVpbGQnLCAnaW5kZXguaHRtbCcpKTtcclxufSk7XHJcblxyXG4vKipcclxuICogRXJyb3IgaGFuZGxlciBtaWRkbGV3YXJlLlxyXG4gKi9cclxuYXBwLnVzZSgoZXJyLCByZXEsIHJlcywgbmV4dCkgPT4ge1xyXG4gIHN3aXRjaCAoZXJyLm5hbWUpIHtcclxuICAgIGNhc2UgJ3JlZGlzLlJlZGlzRXJyb3InOlxyXG4gICAgICBjb25zb2xlLmxvZyhlcnIuc3RhY2spO1xyXG4gICAgICByZXR1cm4gcmVzLnN0YXR1cyg1MDApLmpzb24oeyBtZXNzYWdlOiBcIml0J3MgcmVhbGx5IGJyb2tlZFwiIH0pO1xyXG5cclxuICAgIGNhc2UgJ0Vycm9yJzpcclxuICAgICAgY29uc29sZS5sb2coZXJyLnN0YWNrKTtcclxuICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoNDA0KS5qc29uKHsgbWVzc2FnZTogJ0l0IGlzIGJyb2tlZCcgfSk7XHJcbiAgfVxyXG59KTtcclxuXHJcbi8qKlxyXG4gKiBTb2NrZXQgbGlzdGVuZXJzLlxyXG4gKi9cclxuc29ja2V0cyhpbyk7XHJcblxyXG4vKipcclxuICogRGVmYXVsdCBzZXJ2ZXIgcG9ydCBpcyA4MDgwLlxyXG4gKi9cclxuc2VydmVyLmxpc3RlbihQT1JULCAoKSA9PiB7XHJcbiAgY29uc29sZS5sb2coYExpc3RlbmluZyBvbiBodHRwOi8vJHtwcm9jZXNzLmVudi5SRUFDVF9BUFBfRE9NQUlOfToke1BPUlR9Li4uYCk7XHJcbn0pO1xyXG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "app",
+        "server",
+        "http",
+        "Server",
+        "io",
+        "SocketIO",
+        "PORT",
+        "process",
+        "env",
+        "use",
+        "express",
+        "static",
+        "path",
+        "join",
+        "__dirname",
+        "get",
+        "req",
+        "res",
+        "next",
+        "sendFile",
+        "resolve",
+        "err",
+        "name",
+        "console",
+        "log",
+        "stack",
+        "status",
+        "json",
+        "message",
+        "listen",
+        "REACT_APP_DOMAIN"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;;;AAEA,IAAMA,MAAM,wBAAZ;AACA,IAAMC,SAASC,eAAKC,MAAL,CAAYH,GAAZ,CAAf;AACA,IAAMI,KAAK,IAAIC,gBAAJ,CAAaJ,MAAb,CAAX;AACA,IAAMK,OAAOC,QAAQC,GAAR,CAAYF,IAAZ,IAAoB,IAAjC;;AAEA;;;AAGAN,IAAIS,GAAJ,CAAQ,4BAAR;;AAEA;;;AAGAT,IAAIS,GAAJ,CAAQC,kBAAQC,MAAR,CAAeC,eAAKC,IAAL,CAAUC,SAAV,EAAqB,IAArB,EAA2B,QAA3B,CAAf,CAAR;;AAEA;;;AAGAd,IAAIe,GAAJ,CAAQ,IAAR,EAAc,UAACC,GAAD,EAAMC,GAAN,EAAWC,IAAX,EAAoB;AAChCD,MAAIE,QAAJ,CAAaP,eAAKQ,OAAL,CAAaN,SAAb,EAAwB,IAAxB,EAA8B,OAA9B,EAAuC,YAAvC,CAAb;AACD,CAFD;;AAIA;;;AAGAd,IAAIS,GAAJ,CAAQ,UAACY,GAAD,EAAML,GAAN,EAAWC,GAAX,EAAgBC,IAAhB,EAAyB;AAC/B,UAAQG,IAAIC,IAAZ;AACE,SAAK,kBAAL;AACEC,cAAQC,GAAR,CAAYH,IAAII,KAAhB;AACA,aAAOR,IAAIS,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqB,EAAEC,SAAS,oBAAX,EAArB,CAAP;;AAEF,SAAK,OAAL;AACEL,cAAQC,GAAR,CAAYH,IAAII,KAAhB;AACA,aAAOR,IAAIS,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqB,EAAEC,SAAS,cAAX,EAArB,CAAP;AAPJ;AASD,CAVD;;AAYA;;;AAGA,uBAAQxB,EAAR;;AAEA;;;AAGAH,OAAO4B,MAAP,CAAcvB,IAAd,EAAoB,YAAM;AACxBiB,UAAQC,GAAR,0BAAmCjB,QAAQC,GAAR,CAAYsB,gBAA/C,SAAmExB,IAAnE;AACD,CAFD",
+      "file": "index.js",
+      "sourceRoot": "/home/vagrant/server",
+      "sourcesContent": [
+        "import dotenv from 'dotenv/config';\r\nimport sockets from './sockets';\r\nimport compression from 'compression';\r\nimport express from 'express';\r\nimport http from 'http';\r\nimport SocketIO from 'socket.io';\r\nimport path from 'path';\r\n\r\nconst app = express();\r\nconst server = http.Server(app);\r\nconst io = new SocketIO(server);\r\nconst PORT = process.env.PORT || 8080;\r\n\r\n/**\r\n * Compress response bodies for all requests.\r\n */\r\napp.use(compression());\r\n\r\n/**\r\n * Serve this build directory for prod.\r\n */\r\napp.use(express.static(path.join(__dirname, '..', 'build/')));\r\n\r\n/**\r\n * Catch-all route handler.\r\n */\r\napp.get('/*', (req, res, next) => {\r\n  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));\r\n});\r\n\r\n/**\r\n * Error handler middleware.\r\n */\r\napp.use((err, req, res, next) => {\r\n  switch (err.name) {\r\n    case 'redis.RedisError':\r\n      console.log(err.stack);\r\n      return res.status(500).json({ message: \"it's really broked\" });\r\n\r\n    case 'Error':\r\n      console.log(err.stack);\r\n      return res.status(404).json({ message: 'It is broked' });\r\n  }\r\n});\r\n\r\n/**\r\n * Socket listeners.\r\n */\r\nsockets(io);\r\n\r\n/**\r\n * Default server port is 8080.\r\n */\r\nserver.listen(PORT, () => {\r\n  console.log(`Listening on http://${process.env.REACT_APP_DOMAIN}:${PORT}...`);\r\n});\r\n"
+      ]
+    },
+    "mtime": 1534693883570
+  },
+  "{\"filename\":\"/home/vagrant/server/sockets/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/home/vagrant/server/sockets\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:development": {
+    "metadata": {
+      "usedHelpers": [
+        "asyncToGenerator"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/vagrant/server/sockets/index.js",
+      "filenameRelative": "/home/vagrant/server/sockets/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/home/vagrant/server/sockets",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/home/vagrant/server/sockets",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step(\"next\", value); }, function (err) { step(\"throw\", err); }); } } return step(\"next\"); }); }; }\n\nexports.default = function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(io) {\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            io.on('connect', function (socket) {\n              socket.emit('news', { hello: 'world' });\n\n              socket.on('room', function (data) {\n                socket.join(data);\n                console.log(data);\n              });\n            });\n\n          case 1:\n          case 'end':\n            return _context.stop();\n        }\n      }\n    }, _callee, undefined);\n  }));\n\n  return function (_x) {\n    return _ref.apply(this, arguments);\n  };\n}();\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbImlvIiwib24iLCJzb2NrZXQiLCJlbWl0IiwiaGVsbG8iLCJqb2luIiwiZGF0YSIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztxRUFBZSxpQkFBTUEsRUFBTjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ2JBLGVBQUdDLEVBQUgsQ0FBTSxTQUFOLEVBQWlCLGtCQUFVO0FBQ3pCQyxxQkFBT0MsSUFBUCxDQUFZLE1BQVosRUFBb0IsRUFBRUMsT0FBTyxPQUFULEVBQXBCOztBQUVBRixxQkFBT0QsRUFBUCxDQUFVLE1BQVYsRUFBa0IsZ0JBQVE7QUFDeEJDLHVCQUFPRyxJQUFQLENBQVlDLElBQVo7QUFDQUMsd0JBQVFDLEdBQVIsQ0FBWUYsSUFBWjtBQUNELGVBSEQ7QUFJRCxhQVBEOztBQURhO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEciLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiL2hvbWUvdmFncmFudC9zZXJ2ZXIvc29ja2V0cyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGFzeW5jIGlvID0+IHtcclxuICBpby5vbignY29ubmVjdCcsIHNvY2tldCA9PiB7XHJcbiAgICBzb2NrZXQuZW1pdCgnbmV3cycsIHsgaGVsbG86ICd3b3JsZCcgfSk7XHJcblxyXG4gICAgc29ja2V0Lm9uKCdyb29tJywgZGF0YSA9PiB7XHJcbiAgICAgIHNvY2tldC5qb2luKGRhdGEpO1xyXG4gICAgICBjb25zb2xlLmxvZyhkYXRhKTtcclxuICAgIH0pO1xyXG4gIH0pO1xyXG59O1xyXG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "io",
+        "on",
+        "socket",
+        "emit",
+        "hello",
+        "join",
+        "data",
+        "console",
+        "log"
+      ],
+      "mappings": ";;;;;;;;;qEAAe,iBAAMA,EAAN;AAAA;AAAA;AAAA;AAAA;AACbA,eAAGC,EAAH,CAAM,SAAN,EAAiB,kBAAU;AACzBC,qBAAOC,IAAP,CAAY,MAAZ,EAAoB,EAAEC,OAAO,OAAT,EAApB;;AAEAF,qBAAOD,EAAP,CAAU,MAAV,EAAkB,gBAAQ;AACxBC,uBAAOG,IAAP,CAAYC,IAAZ;AACAC,wBAAQC,GAAR,CAAYF,IAAZ;AACD,eAHD;AAID,aAPD;;AADa;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,G",
+      "file": "index.js",
+      "sourceRoot": "/home/vagrant/server/sockets",
+      "sourcesContent": [
+        "export default async io => {\r\n  io.on('connect', socket => {\r\n    socket.emit('news', { hello: 'world' });\r\n\r\n    socket.on('room', data => {\r\n      socket.join(data);\r\n      console.log(data);\r\n    });\r\n  });\r\n};\r\n"
+      ]
+    },
+    "mtime": 1534694557565
+  }
+}

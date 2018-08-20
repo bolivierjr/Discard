@@ -1,0 +1,7 @@
+.display {
+  grid-area: display;
+  background-color: gray;
+  border-bottom: 0.01em solid black;
+  display: flex;
+  align-items: flex-end;
+}

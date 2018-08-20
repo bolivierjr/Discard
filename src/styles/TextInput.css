@@ -1,0 +1,15 @@
+.text-input {
+  grid-area: textinput;
+  background-color: gray;
+}
+
+input#text-bar {
+  width: 80%;
+  height: 50px;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  border: 0.1em solid black;
+}
+
+input:focus {
+  outline: none;
+}

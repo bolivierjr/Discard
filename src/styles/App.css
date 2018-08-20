@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div#root {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 70% auto;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas:
+    'header header header'
+    '. display .'
+    '. textinput .';
+}

@@ -23,3 +23,5 @@ yarn-error.log*
 
 # redis dumps
 *.rdb
+
+.b*/
