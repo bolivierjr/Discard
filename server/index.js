@@ -1,15 +1,11 @@
-import dotenv from 'dotenv/config';
-import sockets from './sockets';
-import compression from 'compression';
-import express from 'express';
-import http from 'http';
-import SocketIO from 'socket.io';
-import path from 'path';
+const compression = require('compression');
+const express = require('express');
+const http = require('http');
+const path = require('path');
 
 const app = express();
 const server = http.Server(app);
-const io = new SocketIO(server);
-const PORT = process.env.PORT || 8080;
+const SERVER_PORT = process.env.SERVER_PORT || 8080;
 
 /**
  * Compress response bodies for all requests.
@@ -19,13 +15,13 @@ app.use(compression());
 /**
  * Serve this build directory for prod.
  */
-app.use(express.static(path.join(__dirname, '..', 'build/')));
+app.use(express.static(path.join(__dirname, '..', 'dist/')));
 
 /**
  * Catch-all route handler.
  */
 app.get('/*', (req, res, next) => {
-  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', 'dist', 'index.html'));
 });
 
 /**
@@ -44,13 +40,8 @@ app.use((err, req, res, next) => {
 });
 
 /**
- * Socket listeners.
- */
-sockets(io);
-
-/**
  * Default server port is 8080.
  */
-server.listen(PORT, () => {
-  console.log(`Listening on http://${process.env.REACT_APP_DOMAIN}:${PORT}...`);
+server.listen(SERVER_PORT, () => {
+  console.log(`Listening on http://localhost:${SERVER_PORT}...`);
 });

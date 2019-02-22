@@ -1,18 +1,33 @@
-version: '3.1'
+version: '3'
+
 services:
-  redis:
-    image: redis
-    expose:
-      - 6739
-  web:
-    environment:
-      - NODE_ENV=development
+  nginx-proxy:
+    restart: always
     build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - .:/code
-      - /code/node_modules
+      context: ./nginx-proxy
+      dockerfile: ${DOCKER_FILE}
     ports:
-      - 8080:8080
-      - 3000:3000
+      - '80:80'
+
+  redis:
+    image: 'redis:latest'
+
+  api:
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+    build:
+      context: ./server
+      dockerfile: ${DOCKER_FILE}
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+
+  client:
+    build:
+      context: ./client
+      dockerfile: ${DOCKER_FILE}
+    volumes:
+      - /app/node_modules
+      - ./client:/app
