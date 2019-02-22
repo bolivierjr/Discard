@@ -17,10 +17,7 @@
     "nodemon": "^1.18.10"
   },
   "scripts": {
-    "start:server": "concurrently \"yarn server\" \"yarn client\"",
-    "start:dev": "NODE_ENV=development nodemon --inspect index.js",
-    "build:server": "babel -d ./build ./server -s --presets=env",
-    "build": "yarn build:client && yarn build:server",
-    "start:prod": "NODE_ENV=production node build/index.js"
+    "start:dev": "NODE_ENV=development nodemon --inspect src/index.js",
+    "start:prod": "NODE_ENV=production node dist/index.js"
   }
 }

@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 const server = http.Server(app);
-const SERVER_PORT = process.env.SERVER_PORT || 8080;
+const SERVER_PORT = process.env.SERVER_PORT || 5000;
 
 /**
  * Compress response bodies for all requests.

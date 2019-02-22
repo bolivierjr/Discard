@@ -3,11 +3,12 @@ version: '3'
 services:
   nginx-proxy:
     restart: always
+    container_name: nginx_proxy
     build:
       context: ./nginx-proxy
       dockerfile: ${DOCKER_FILE}
     ports:
-      - '80:80'
+      - '8080:8080'
 
   redis:
     image: 'redis:latest'
