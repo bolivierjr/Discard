@@ -2,9 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PORT = process.env.CLIENT_PORT || 3000;
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js'],
   module: {
     rules: [
       {
@@ -50,9 +51,14 @@ module.exports = {
     runtimeChunk: 'single'
   },
   devServer: {
+    host: '0.0.0.0',
+    public: 'discard.test',
     contentBase: './src',
     compress: true,
-    hot: true,
-    port: 3000
+    port: `${PORT}`,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'X-Requested-With'
+    }
   }
 };

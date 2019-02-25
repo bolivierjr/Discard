@@ -8,6 +8,16 @@ import TextInput from './components/TextInput';
 import './styles/App.css';
 
 function App() {
+  const ws = new WebSocket('ws://localhost:8080/chat');
+
+  ws.addEventListener('open', function(event) {
+    ws.send('Hello Server');
+  });
+
+  ws.addEventListener('message', event => {
+    console.log(event.data);
+  });
+
   return (
     <div className="container">
       <Header />
@@ -19,4 +29,6 @@ function App() {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-module.hot.accept();
+if (module.hot) {
+  module.hot.accept();
+}

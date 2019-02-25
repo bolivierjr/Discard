@@ -1,28 +1,42 @@
 const compression = require('compression');
 const express = require('express');
 const http = require('http');
+const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const server = http.Server(app);
-const SERVER_PORT = process.env.SERVER_PORT || 5000;
 
+app.use(cors());
+
+const server = http.createServer(app);
+const WebSocket = require('ws');
+const PORT = process.env.SERVER_PORT || 5000;
+
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', (socket, req) => {
+  const ip = req.headers['x-forwarded-for'].split(/\s*,\s*/)[0];
+
+  socket.on('message', data => {
+    socket.send(ip);
+  });
+});
 /**
  * Compress response bodies for all requests.
  */
-app.use(compression());
+// app.use(compression());
 
 /**
  * Serve this build directory for prod.
  */
-app.use(express.static(path.join(__dirname, '..', 'dist/')));
+// app.use(express.static(path.join(__dirname, '..', 'dist/')));
 
 /**
  * Catch-all route handler.
  */
-app.get('/*', (req, res, next) => {
-  res.sendFile(path.resolve(__dirname, '..', 'dist', 'index.html'));
-});
+// app.get('/*', (req, res, next) => {
+//   res.sendFile(path.resolve(__dirname, '..', 'dist', 'index.html'));
+// });
 
 /**
  * Error handler middleware.
@@ -42,6 +56,6 @@ app.use((err, req, res, next) => {
 /**
  * Default server port is 8080.
  */
-server.listen(SERVER_PORT, () => {
-  console.log(`Listening on http://localhost:${SERVER_PORT}...`);
+server.listen(PORT, () => {
+  console.log(`Listening on http://localhost:${PORT}...`);
 });

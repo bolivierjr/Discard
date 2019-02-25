@@ -16,6 +16,7 @@ services:
   api:
     environment:
       - NODE_ENV=${NODE_ENV}
+      - SERVER_PORT=${SERVER_PORT}
       - REDIS_HOST=${REDIS_HOST}
       - REDIS_PORT=${REDIS_PORT}
     build:
@@ -26,6 +27,9 @@ services:
       - ./server:/app
 
   client:
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - CLIENT_PORT=${CLIENT_PORT}
     build:
       context: ./client
       dockerfile: ${DOCKER_FILE}
