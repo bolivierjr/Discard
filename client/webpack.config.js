@@ -37,7 +37,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
@@ -53,8 +52,7 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     public: 'discard.test',
-    contentBase: './src',
-    compress: true,
+    hot: true,
     port: `${PORT}`,
     headers: {
       'Access-Control-Allow-Origin': '*',
