@@ -5,14 +5,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PORT = process.env.CLIENT_PORT || 3000;
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: [
+    'react-hot-loader/patch',
+    `webpack-dev-server/client?http://${require('ip').address()}:${PORT}`,
+    'webpack/hot/only-dev-server',
+    './src/index.js'
+  ],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true
+          }
         }
       },
       {
@@ -36,8 +44,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
@@ -45,20 +57,27 @@ module.exports = {
   ],
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   optimization: {
     runtimeChunk: 'single'
   },
   devServer: {
+    contentBase: './dist',
     host: '0.0.0.0',
+    hot: true,
     public: 'discard.test',
-    contentBase: './src',
-    compress: true,
     port: `${PORT}`,
+    publicPath: '/',
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': 'X-Requested-With'
+      'Access-Control-Allow-Headers':
+        'Origin, X-Requested-With, Content-Type, Accept'
+    },
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
     }
   }
 };

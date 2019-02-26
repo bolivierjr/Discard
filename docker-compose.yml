@@ -28,6 +28,7 @@ services:
 
   client:
     environment:
+      - CHOKIDAR_USEPOLLING=true
       - NODE_ENV=${NODE_ENV}
       - CLIENT_PORT=${CLIENT_PORT}
     build:
