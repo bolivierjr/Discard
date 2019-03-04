@@ -10,13 +10,13 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "redis": "^2.8.0",
-    "ws": "^6.1.4"
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
   },
   "scripts": {
-    "start:dev": "NODE_ENV=development nodemon --inspect src/index.js",
+    "start:dev": "NODE_ENV=development nodemon src/index.js",
     "start:prod": "NODE_ENV=production node dist/index.js"
   }
 }

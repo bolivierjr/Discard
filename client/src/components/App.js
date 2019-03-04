@@ -2,17 +2,20 @@ import React from 'react';
 import Header from './Header';
 import Display from './Display';
 import TextInput from './TextInput';
-import '../styles/App.css';
+import './styles/App.css';
+import io from 'socket.io-client';
 
 function App() {
-  const ws = new WebSocket('ws://localhost:8080/chat');
+  const a = 'yo mama';
+  const socket = io('http://localhost:8080/');
 
-  ws.addEventListener('open', function(event) {
-    ws.send('Hello Server');
+  socket.on('connect', () => {
+    console.log('User connected');
+    socket.emit('message', { msg: 'yup' });
   });
 
-  ws.addEventListener('message', event => {
-    console.log(event.data);
+  socket.on('message', data => {
+    console.log(data);
   });
 
   return (

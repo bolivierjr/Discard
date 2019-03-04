@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PORT = process.env.CLIENT_PORT || 3000;
 
 module.exports = {
+  devtool: 'eval-source-map',
   entry: [
     'react-hot-loader/patch',
     `webpack-dev-server/client?http://${require('ip').address()}:${PORT}`,
@@ -67,7 +68,8 @@ module.exports = {
     contentBase: './dist',
     host: '0.0.0.0',
     hot: true,
-    public: 'discard.test',
+    inline: true,
+    public: 'localhost',
     port: `${PORT}`,
     publicPath: '/',
     headers: {
